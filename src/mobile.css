@@ -1,0 +1,148 @@
+@media screen and (max-width: 1025px) {
+    .login main .formPart {
+        padding: 2rem;
+        justify-content: center;
+    }
+    
+    .dashboard .usercard {
+        display: none;
+    }
+
+    .login main .side {
+        display: none;
+    }
+
+    .grid-card .top .card-ico img {
+        height: 1.5rem;
+    }
+
+    .grid-card .top .ellipsis img {
+        height: 1.5rem;
+        cursor: pointer;
+    }
+        .dash_section .greet .tags {
+            visibility: visible;
+        }
+}
+
+@media screen and (max-width: 600px) {
+    .login main .formPart .form-g {
+        margin: 1rem 0;
+        font-size: .8rem;
+    }
+
+    .formPart section .btnx{
+        padding: 1rem .75rem;
+    }
+
+    .formPart section .inp {
+        padding: .75rem;
+    }
+   
+    .grid-card .details span{
+        white-space: nowrap;
+        max-width: 18rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .r-3 {
+        display: grid;
+        gap: 10px;
+        margin: .5rem 0;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .formPart section .r-3 > div {
+        display: flex;
+        padding: 5px;
+        border-radius: .4rem;
+        font-size: .8rem;
+        gap: 5px;
+        transition: .25s ease-in-out;
+        font-weight: 450;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(0, 0, 0, .2);
+        cursor: pointer;
+    }
+
+    .login main {
+        height: 95vh;
+        width: 99vw;
+    }
+
+    .grid-system .grid-card {
+        min-width: unset;
+        width: 100%;
+        /* max-width: 25rem; */
+        font-size: 70%;
+    }
+
+    .dash_section {
+        margin-bottom: 2rem;
+    }
+
+    .app {
+        --bacground-color: #d0d5e1;
+        --main-blue: #3c37ff;
+        --dark-blue: #2520e3;
+        --dark-blue-black: #03004d;
+        --white: #fff;
+        --trans: .25s ease-in-out;
+        --black: #000;
+        --primary-background: #f8fafb;
+    }
+
+    .dashboard .navArea {
+        display: none;
+    }
+
+    .mbNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: absolute;
+        bottom: 0;
+        z-index: 999999;
+        background-color: var(--main-blue);
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .mbNav .tab {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+        transition: var(--trans);
+        justify-content: center;
+    }
+
+    .mbNav .tab:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .mbNav .tab.active {
+        background-color: rgba(0, 0, 0, 0.15);
+        border-bottom: 3px solid var(--white);
+    }
+
+    .mbNav .tab:active {
+        opacity: .7;
+        transform: scale(95%);
+    }
+
+    .mb{
+        display: none;
+    }
+
+    .mbNav .tab img {
+        width: 5.5vmin;
+        object-fit: contain;
+        filter: invert(1);
+    }
+}
